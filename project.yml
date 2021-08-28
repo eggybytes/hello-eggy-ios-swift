@@ -1,0 +1,32 @@
+name: hello-eggy-ios-swift
+options:
+  createIntermediateGroups: true
+  defaultConfig: Debug
+  groupSortPosition: none
+  bundleIdPrefix: "com.eggybytes"
+packages:
+  eggy-ios:
+    url: https://github.com/eggybytes/eggy-ios
+    exactVersion: 1.0.2
+targets:
+  hello-eggy-ios-swift:
+    type: application
+    platform: iOS
+    deploymentTarget: "13.0"
+    settings:
+      DEVELOPMENT_TEAM: 3452G4866Y
+    sources:
+      - Sources
+    dependencies:
+      - package: eggy-ios
+    entitlements:
+      path: hello-eggy-ios-swift.entitlements
+      properties:
+        aps-environment: development
+schemes:
+  hello-eggy-ios-swift:
+    build:
+      parallelizeBuild: false
+      buildImplicitDependencies: false
+      targets:
+        hello-eggy-ios-swift: hello-eggy-ios-swift

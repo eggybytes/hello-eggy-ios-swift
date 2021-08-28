@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "eggy-ios",
+        "repositoryURL": "https://github.com/eggybytes/eggy-ios",
+        "state": {
+          "branch": null,
+          "revision": "efa7abaa55a13f65feab4f99370114488076b71a",
+          "version": "1.0.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
